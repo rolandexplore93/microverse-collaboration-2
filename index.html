@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-</head>
-<body>
-    <div>
-        <h1 id="header">Landing Page Project</h1>
-        <img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv1qWRQ2BtSBSxxb_23S9HBm6P1l3BOYWXQQ&usqp=CAU" alt="">
-        <nav id="nav-bar">
-            <ul>
-                <li class="nav-link"><a href="#home">Home</a></li>
-                <li class="nav-link"><a href="#about">About</a></li>
-                <li class="nav-link"><a href="#services">Services</a></li>
-                <li class="nav-link"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div>  
-            <iframe id="video" type="video/HD"width="458px" height="250px" src="https://www.youtube.com/embed/QRmKa7vvct4" controls></iframe>
-        </div>
-        <div></div>
-    </div>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Landing Page</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header id="header">
+			<nav id="nav-bar">
+				<div>
+					<img
+						id="header-img"
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv1qWRQ2BtSBSxxb_23S9HBm6P1l3BOYWXQQ&usqp=CAU"
+						alt=""
+					/>
+					<h4>Orange</h4>
+				</div>
+				<ul>
+					<li class="nav-link"><a href="#home">Home</a></li>
+					<li class="nav-link"><a href="#about">About</a></li>
+					<li class="nav-link"><a href="#services">Services</a></li>
+					<li class="nav-link"><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div>
+				<iframe
+					id="video"
+					type="video/HD"
+					width="458px"
+					height="250px"
+					src="https://www.youtube.com/embed/QRmKa7vvct4"
+					controls
+				></iframe>
+			</div>
+			<form id="form" action="https://www.freecodecamp.com/email-submit">
+				<input
+					type="email"
+					placeholder="Enter your Email"
+					required
+					id="email"
+					name="email"
+				/>
+				<input type="submit" value="Submit" id="submit" />
+			</form>
+		</section>
+	</body>
 </html>
