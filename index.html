@@ -21,15 +21,14 @@
 				</div>
 				<ul>
 					<li class="nav-link"><a href="#home">Home</a></li>
-					<li class="nav-link"><a href="#about">About</a></li>
+					<li class="nav-link"><a href="#form">Message</a></li>
 					<li class="nav-link"><a href="#service">Services</a></li>
 					<li class="nav-link"><a href="#pricing">Pricing</a></li>
-					<li class="nav-link"><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 		<section>
-			<div>
+			<div class="video-wrapper" id="home">
 				<iframe
 					id="video"
 					type="video/HD"
@@ -40,69 +39,94 @@
 				></iframe>
 			</div>
 			<form id="form" action="https://www.freecodecamp.com/email-submit">
-				<input
-					type="email"
-					placeholder="Enter your Email"
-					required
-					id="email"
-					name="email"
-				/>
-				<input type="submit" value="Submit" id="submit" />
+				<div>
+					<input
+						type="email"
+						placeholder="Enter your Email"
+						required
+						id="email"
+						name="email"
+					/>
+					<input type="submit" value="Submit" id="submit" />
+				</div>
 			</form>
 
-            <div class="service" id="service">
-                <h2 class="service__tag">Our Premium Services</h2>
-                <div class="service__flex">
-                    <div class="service__description">
-                        <h3>Frontend Development</h3>
-                        <img src="https://cdn.pixabay.com/photo/2019/07/16/18/18/frontend-4342425__480.png" alt="frontend-dev">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolorem expedita sequi, fugit, odio aut nulla ab voluptates commodi beatae alias facilis nemo? Dolor assumenda illo fuga quaerat optio? Earum.</p>
-                    </div>
-                    <div class="service__description">
-                        <h3>Database Management</h3>
-                        <img src="https://media.istockphoto.com/photos/chart-board-with-business-data-picture-id912953132?b=1&k=20&m=912953132&s=170667a&w=0&h=_DQjjZ9CShURmhV5gXtY_YMi-18TBZeFicm89R-BKwI=" alt="database">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolorem expedita sequi, fugit, odio aut nulla ab voluptates commodi beatae alias facilis nemo? Dolor assumenda illo fuga quaerat optio? Earum.</p>
-                    </div>
-                    <div class="service__description">
-                        <h3>Backend Development</h3>
-                        <img src="https://media.istockphoto.com/photos/detailed-real-php-lines-on-on-dark-green-background-web-developing-picture-id1164938871?b=1&k=20&m=1164938871&s=170667a&w=0&h=-WuvATVr7aYCSTB9WPI6q_wfq5j3Mk5mfKDjpo4tBNM=" alt="backend-dev">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolorem expedita sequi, fugit, odio aut nulla ab voluptates commodi beatae alias facilis nemo? Dolor assumenda illo fuga quaerat optio? Earum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="purchase">
-                <div class="purchase__service">
-                    <p class="purchase__title">Frontend Services</p>
-                    <p class="purchase__price">$40/hr</p>
-                    <ul class="purchase__skillset">
-                        <li>HTML & CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                    </ul>
-                    <button class="purchase__order" type="submit">Order</button>
-                </div>
-                <div class="purchase__service">
-                    <p class="purchase__title">Database Services</p>
-                    <p class="purchase__price">$40/hr</p>
-                    <ul class="purchase__skillset">
-                        <li>MongoDB</li>
-                        <li>SQL</li>
-                        <li>Progress</li>
-                    </ul>
-                    <button class="purchase__order" type="submit">Order</button>
-                </div>
-                <div class="purchase__service">
-                    <p class="purchase__title">Backend Services</p>
-                    <p class="purchase__price">$40/hr</p>
-                    <ul class="purchase__skillset">
-                        <li>Node</li>
-                        <li>Python</li>
-                        <li>Ruby</li>
-                    </ul>
-                    <button class="purchase__order" type="submit">Order</button>
-                </div>
-            </div>
-
+			<div class="service" id="service">
+				<h2 class="service__tag">Our Premium Services</h2>
+				<div class="service__flex">
+					<div class="service__description">
+						<h3>Frontend Development</h3>
+						<img
+							src="https://cdn.pixabay.com/photo/2019/07/16/18/18/frontend-4342425__480.png"
+							alt="frontend-dev"
+						/>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+							dolorem expedita sequi, fugit, odio aut nulla ab voluptates
+							commodi beatae alias facilis nemo? Dolor assumenda illo fuga
+							quaerat optio? Earum.
+						</p>
+					</div>
+					<div class="service__description">
+						<h3>Database Management</h3>
+						<img
+							src="https://media.istockphoto.com/photos/chart-board-with-business-data-picture-id912953132?b=1&k=20&m=912953132&s=170667a&w=0&h=_DQjjZ9CShURmhV5gXtY_YMi-18TBZeFicm89R-BKwI="
+							alt="database"
+						/>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+							dolorem expedita sequi, fugit, odio aut nulla ab voluptates
+							commodi beatae alias facilis nemo? Dolor assumenda illo fuga
+							quaerat optio? Earum.
+						</p>
+					</div>
+					<div class="service__description">
+						<h3>Backend Development</h3>
+						<img
+							src="https://media.istockphoto.com/photos/detailed-real-php-lines-on-on-dark-green-background-web-developing-picture-id1164938871?b=1&k=20&m=1164938871&s=170667a&w=0&h=-WuvATVr7aYCSTB9WPI6q_wfq5j3Mk5mfKDjpo4tBNM="
+							alt="backend-dev"
+						/>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+							dolorem expedita sequi, fugit, odio aut nulla ab voluptates
+							commodi beatae alias facilis nemo? Dolor assumenda illo fuga
+							quaerat optio? Earum.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="purchase" id="pricing">
+				<div class="purchase__service">
+					<p class="purchase__title">Frontend Services</p>
+					<p class="purchase__price">$40/hr</p>
+					<ul class="purchase__skillset">
+						<li>HTML & CSS</li>
+						<li>JavaScript</li>
+						<li>React</li>
+					</ul>
+					<button class="purchase__order" type="submit">Order</button>
+				</div>
+				<div class="purchase__service">
+					<p class="purchase__title">Database Services</p>
+					<p class="purchase__price">$40/hr</p>
+					<ul class="purchase__skillset">
+						<li>MongoDB</li>
+						<li>SQL</li>
+						<li>Progress</li>
+					</ul>
+					<button class="purchase__order" type="submit">Order</button>
+				</div>
+				<div class="purchase__service">
+					<p class="purchase__title">Backend Services</p>
+					<p class="purchase__price">$40/hr</p>
+					<ul class="purchase__skillset">
+						<li>Node</li>
+						<li>Python</li>
+						<li>Ruby</li>
+					</ul>
+					<button class="purchase__order" type="submit">Order</button>
+				</div>
+			</div>
 		</section>
 	</body>
 </html>
